@@ -74,7 +74,7 @@ trait TimeSeries {
    * Run process if file exists, If not exists print alert
    * @param filePath String path to file
    */
-  def readFile(filePath: String): Unit = {
+  def readFile(filePath: String):Unit = {
     val source = Try(Source.fromFile(filePath))
     source match {
       case Success(fileSource) =>
